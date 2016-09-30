@@ -1,4 +1,15 @@
 import React from 'react';
+import firebase from 'firebase';
+
+var config = {
+    apiKey: "AIzaSyD2LLCvqCKGSpQFPZtpixJqxuJCQPSbsZU",
+    authDomain: "photo-app-4dacc.firebaseapp.com",
+    databaseURL: "https://photo-app-4dacc.firebaseio.com",
+    storageBucket: "photo-app-4dacc.appspot.com",
+    messagingSenderId: "225745303461"
+  };
+firebase.initializeApp(config);
+
 
 const Comments = React.createClass({
   renderComment(comment, i) {
